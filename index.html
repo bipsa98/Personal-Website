@@ -1,0 +1,693 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bipsa Nayak Portfolio</title>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<style>
+							
+					#left{float:left;width:100px;}
+					#right{float:right;width:100px;}
+					#center{margin:0 auto;width:100px;}
+							.flex-container {
+					display: flex;
+					justify-content: center;
+					
+					}
+
+					.flex-container > div {
+					background-color: #f1f1f1;
+					width: 100px;
+					margin: 10px;
+					text-align: center;
+					line-height: 75px;
+					font-size: 30px;
+					}
+					
+				.row {
+		display: flex;
+		}
+
+		/* Create three equal columns that sits next to each other */
+		.column {
+		flex: 33.33%;
+		padding: 5px;
+		}
+		#customers {
+		  font-family: Arial, Helvetica, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+		
+		#customers td, #customers th {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		}
+		
+		#customers tr:nth-child(even){background-color: #f2f2f2;}
+		
+		#customers tr:hover {background-color: #ddd;}
+		
+		#customers th {
+		  padding-top: 12px;
+		  padding-bottom: 12px;
+		  text-align: left;
+		  background-color: #967f98;
+		  color: rgb(255, 255, 255);
+		}
+			.olcards,
+			.olcards * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			}
+
+			.olcards {
+			list-style: none;
+			counter-reset: cardCount;
+			font-family: sans-serif;
+			display: flex;
+			flex-direction: column;
+			--cardsGap: 1rem;
+			gap: var(--cardsGap);
+			padding-bottom: var(--cardsGap);
+			}
+			.olcards li {
+			counter-increment: cardCount;
+			display: flex;
+			color: white;
+			--labelOffset: 1rem;
+			--arrowClipSize: 1.5rem;
+			margin-top: var(--labelOffset);
+			}
+
+			.olcards li::before {
+			content: counter(cardCount, decimal-leading-zero);
+			background: white;
+			color: var(--cardColor);
+			font-size: 2em;
+			font-weight: 700;
+			transform: translateY(calc(-1 * var(--labelOffset)));
+			margin-right: calc(-1 * var(--labelOffset));
+			z-index: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-inline: 0.5em;
+			}
+
+			.olcards li .content {
+			background-color: var(--cardColor);
+			--inlinePadding: 1em;
+			--boxPadding: 0.5em;
+			display: grid;
+			padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+				var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+			grid-template-areas:
+				"icon title"
+				"icon text";
+			gap: 0.25em 1em;
+			clip-path: polygon(
+				0 0,
+				calc(100% - var(--arrowClipSize)) 0,
+				100% 50%,
+				calc(100% - var(--arrowClipSize)) 100%,
+				calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+				0 calc(100% + var(--cardsGap))
+			);
+			position: relative;
+			}
+			.olcards li .content::before {
+			content: "";
+			position: absolute;
+			width: var(--labelOffset);
+			height: var(--labelOffset);
+			background: var(--cardColor);
+			left: 0;
+			bottom: 0;
+			clip-path: polygon(0 0, 100% 0, 0 100%);
+			filter: brightness(0.75);
+			}
+			.olcards li .content::after {
+			content: "";
+			position: absolute;
+			height: var(--cardsGap);
+			width: var(--cardsGap);
+			background: linear-gradient(to right, rgba(0, 0, 0, 0.25), transparent 50%);
+			left: 0;
+			top: 100%;
+			}
+			.olcards li .icon {
+			grid-area: icon;
+			align-self: center;
+			font-size: 2em;
+			}
+			.olcards li .content .title {
+			grid-area: title;
+			font-size: 1.25em;
+			/* font-weight: 700; */
+			}
+			.olcards li .content .text {
+			grid-area: text;
+			}
+
+		</style>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!--<span><img src="images/logo.svg" alt="" /></span>-->
+						<h1><b>Bipsa Nayak</b></h1>
+						<!--<p><br />
+						 <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>-->
+						 <p><strong>Developer|Blogger|Learner</strong></p>
+						<p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">Experience</a></li>
+							<li><a href="#second">Skills</a></li>
+							<li><a href="#third">Projects</a></li>
+							<li><a href="#fourth">Education</a></li>
+							<li><a href="#fifth">Achievements</a></li>
+							<li><a href="#sixth">Blogs</a></li>
+							<li><a href="#seventh">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2><b>About Me</b></h2>
+										</header>
+										<p>I am a <b>Technical Consultant</b> in the <b>SAP ABAP</b> Domain . I have developed many projects in Infosys where my client was <b>Daimler</b>. 
+Built features around required use cases - <b>Dialog Programming, Reports ,Web Dynpro, CLP</b> among others in SAP ABAP. I have conducted unit tests for the same.
+Won <b>ESSAP Rise rookie of the quarter award in FY'22</b>. Received <b>Infosys Certified SAP ABAP Professional Consultant</b>.
+Experience with Agile Framework and Methodologies.</p>
+										<ul class="actions">
+											<li><a href="BipsaNayakResume.pdf" class="btn btn-outline-secondary">Download My Resume</a></li>
+											<div class="text-center">
+											<!--<button type="button"  href="BipsaNayakResume.pdf" class="btn btn-outline-secondary" >Download My Resume</button>-->
+											</div>
+											
+										</ul>
+									</div>
+									<span class="image"><img src="images/pic01.png" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- Experience -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2><b>Work Experience</b></h2>
+								</header>
+								<ul class="features">
+									<li>
+										<!--<span class="icon solid major style1 fa-code"><img src="images/pic02.png" alt="" /></span>-->
+										<span class="image"><img src="images/pic02.png" width="318" height="318" alt="" /></span>
+										<h3>Infosys Limited</h3>
+										<p>Built features around required use cases - Dialog Programming, Reports, Classes, Function modules, Smartforms, CLP among others in SAP ABAP.Expert in debugging and finding RCA of the issues.</p>
+									</li>
+									<li>
+										<!--<span class="icon major style3 fa-copy"></span>-->
+										<span class="image"><img src="images/pic03.jpg" width="318" height="318" alt="" /></span>
+										<h3>Questease Solutions</h3>
+										<p>Successfully developed a Profile change Application which will change Profile modes. The application comprised of 3 modes -Different Mode Changing Function, Scheduled Message Mode, Alarm Mode.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<!--<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>-->
+								</footer>
+							</section>
+
+
+							<section id="second" class="main special">
+								<header class="major">
+									<h2><b>My Skills</b></h2>
+									<p></p>
+								</header>
+								<ul class="statistics">
+									<li class="style4">
+										<strong></strong> SAP ABAP
+									</li>
+									<li class="style2">
+										<b></b> Functional testing
+									</li>
+									<li class="style3">
+										<strong></strong> Dialog Programming
+									</li>
+									<li class="style4">
+										<strong></strong> Reports
+									</li>
+									<li class="style3">
+										<strong></strong> Web Dynpro
+									</li>
+									<li class="style4">
+										<strong></strong> Debugging
+									</li>
+									<li class="style5">
+										<strong></strong> Root Cause Analysis
+									</li>
+									
+								</ul>
+								<ul class="statistics">
+								<li class="style2">
+									<strong></strong> MS Word
+								</li>
+								<li class="style4">
+									<strong></strong> Documentation
+								</li>
+								<li class="style5">
+									<strong></strong> MS Power Point
+								</li>
+								<li class="style4">
+									<strong></strong> Analytical Skills
+								</li>
+								<li class="style5">
+									<strong></strong> MS-Excel
+								</li>
+								<li class="style4">
+									<strong></strong> Web Development
+								</li>
+								<li class="style5">
+									<strong></strong> MYSQL
+								</li>
+								<li class="style2">
+									<strong></strong> Java
+								</li>
+							</ul>
+								<p class="content"></p>
+								<footer class="major">
+									<ul class="actions special">
+										<!--<li><a href="generic.html" class="button">Learn More</a></li>-->
+									</ul>
+								</footer>
+							</section>
+
+
+							
+							<section id="third" class="main special">
+								<header class="major">
+									<h2>Academic Projects</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="image"><img src="images/pic04.jpg" width="318" height="318" alt="" /></span>
+										<h3>Automation of user interface using voice</h3>
+										<p>Used Google API to convert voice to text as per the voice command given to the system.</p>
+									</li>
+									<li>
+										<span class="image"><img src="images/pic05.jpg" width="318" height="318" alt="" /></span>
+										<h3>Bluetooth controlled bot using Arduino</h3>
+										<p>Created a Bluetooth controlled bot to automate cleaning.</p>
+									</li>
+									<li>
+										<span class="image"><img src="images/pic06.jpg" width="318" height="318" alt="" /></span>
+										<h3>Restaurant management system using SQL</h3>
+										<p>Created a database management system for restaurants</p>
+									</li>
+								</ul>
+								<p class="content"></p>
+								<!--<hr class="solid" ; style = "border-top: 3px solid #bbb ; width : 100% "> -->
+								<footer class="major">
+									<ul class="actions special">
+										<!--<li><a href="generic.html" class="button">Learn More</a></li>-->
+										<hr>
+									</ul>
+								</footer>
+							</section>
+
+						<section id="fourth" class="main">
+								
+					  	<div class="wrapper style2" id="education">
+							<article id="main" class="container special">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+										
+										<!--<p>I am a <b></p>-->
+											<h2><b>Education</b></h2>
+											<p></p>
+										</header>
+										<table id="customers">
+											<tr>
+											  <th style="width: 30%;color: #f2f2f2;text-align: center;">Institution</th>
+											  <th style="width: 30%;color: #f2f2f2;text-align: center;">Degree</th>
+											  <th style="width: 40%;color: #f2f2f2;text-align: center;">CGPA/Percentage</th>
+											</tr>
+											<tr>
+											  <td style="width: 30%;">Vellore Institute of Technology, Vellore</td>
+											  <td style="width: 30%;">B.Tech in Computer Science Engineering</td>
+											  <td style="width: 40%;">8.46</td>
+											</tr>
+											<tr>
+												<td style="width: 30%;">DAV Public School(Intermediate) </td>
+												<td style="width: 30%;">CBSE Class 12th</td>
+												<td style="width: 40%;">76.7%</td>
+											</tr>
+											<tr>
+												<td style="width: 30%;">DAV Public School(Higher Secondary Education)</td>
+												<td style="width: 30%;">CBSE Class 10th</td>
+												<td style="width: 40%;">8.4</td>
+											</tr>
+										  </table>
+										
+										<ul class="actions">
+	
+											<div class="text-center">
+											<!--<button type="button"  href="BipsaNayakResume.pdf" class="btn btn-outline-secondary" >Download My Resume</button>-->
+											</div>
+											
+										</ul>
+									</div>
+									<!--<span class="image"><img src="images/pic01.png" alt="" /></span>-->
+								</div>
+							</article>
+
+						</div>
+						</section>
+					
+
+
+
+							<!-- Education -->
+				<!--<div class="wrapper style2" id="education">
+
+					<article id="main" class="container special">
+						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>-->
+						<!--<section id="fourth" class="main special">
+							<header class="major">
+								
+								<h2><b>Education</b></h2>
+								<p></p>
+							</header>
+		
+						<table id="customers">
+							<tr>
+							  <th style="width: 30%;color: #f2f2f2;text-align: center;">Institution</th>
+							  <th style="width: 30%;color: #f2f2f2;text-align: center;">Degree</th>
+							  <th style="width: 40%;color: #f2f2f2;text-align: center;">CGPA/Percentage</th>
+							</tr>
+							<tr>
+							  <td style="width: 30%;">Vellore Institute of Technology, Vellore</td>
+							  <td style="width: 30%;">B.Tech in Computer Science Engineering</td>
+							  <td style="width: 40%;">8.46</td>
+							</tr>
+							<tr>
+								<td style="width: 30%;">DAV Public School(Intermediate) </td>
+								<td style="width: 30%;">CBSE Class 12th</td>
+								<td style="width: 40%;">76.7%</td>
+							</tr>
+							<tr>
+								<td style="width: 30%;">DAV Public School(Higher Secondary Education)</td>
+								<td style="width: 30%;">CBSE Class 10th</td>
+								<td style="width: 40%;">8.4</td>
+							</tr>
+						  </table>
+						</section>
+					</article>
+
+				</div>-->
+
+				<!-- End Education -->
+
+						<!-- Second Section -->
+							<section id="fifth" class="main special">
+								<header class="major">
+									<h2><b>My Achievements</b></h2>
+									<p></p>
+								</header>
+								<!--<style=" padding: 20px;">
+									<section id="achievements" style=" padding: 20px;">-->
+									<h2 style="text-align: center;"></h2>
+									<ul style="list-style: none; margin: 0; padding: 0;">
+
+									  <!--<h1>Ordered List Arrow Cards</h1>-->
+										<ol class="olcards">
+											<li style="--cardColor:#b877c0">
+												<div class="content">
+													<div class="text">Certified SAP ABAP Professional Consultant - Infosys</div>
+												</div>
+											</li>					
+											<li style="--cardColor:#a396a4">
+												<div class="content">
+													<div class="text">Certified SAP ABAP Webdynpro Professional Consultant - Infosys</div>
+												</div>
+											</li>
+											<li style="--cardColor:#b877c0">
+												<div class="content">
+												<div class="text">Reports in ABAP - Infosys</div>
+											</div>
+											<li style="--cardColor:#a396a4">
+												<div class="content">
+												<div class="text">Introduction to SAP Fiori - Infosys</div>
+											</div>
+										    </li>
+										    
+											<li style="--cardColor:#b877c0">
+												<div class="content">
+												<div class="text">Software Quality Assurance - Udemy</div>
+											</div>
+										    </li>
+											<li style="--cardColor:#b88cbd">
+												<div class="content">
+												<div class="text">Microsoft Azure AI Fundamentals - AZ-900</div>
+											</div>
+										    </li>
+											<li style="--cardColor:#b877c0">
+												<div class="content">
+												<div class="text">Databases and SQL for Data Science - Coursera </div>
+											</div>
+										    </li>
+											<li style="--cardColor:#a396a4">
+												<div class="content">
+												<div class="text">Software Development Processes and Methodologies - Coursera</div>
+											</div>
+										    </li>
+											
+											<li style="--cardColor:#b877c0">
+												<div class="content">
+												<div class="text">Infosys SAP Rise Award: For exceptional performance in the calendar year and valued efforts in ESSAP.</div>
+											</div>
+										    </li>
+										</ol>
+
+									</ul>
+								  </section>
+								  
+				
+
+
+
+
+						<!-- Get Started -->
+							<section id="sixth" class="main special">
+								<header class="major">
+									<h2><b>My Blogs</b></h2>
+								</header>
+								<ul class="features">
+									<li>
+										<div class="card" style="width:300px">
+											<img class="card-img-top" src="images/pic07.png" alt="Card image" width="218" height="218" >
+											<div class="card-body">
+											  <h4 class="card-title">Bipsa Nayak</h4>
+											  <p class="card-text">Building a Better Future: Key takeaways from the Book ‘Atomic Habits’</p>
+											  <a href="https://medium.com/@bipsa1998/building-a-better-future-the-atomic-habits-book-review-d017d190c47d" class="btn btn-primary">8 min read</a>
+  
+											</div>
+										
+									</li>
+									<li>
+										<div class="card" style="width:300px">
+										<img class="card-img-top" src="images/pic08.png" alt="Card image" width="218" height="218">
+											<div class="card-body">
+											  <h4 class="card-title">Bipsa Nayak</h4>
+											  <p class="card-text">How Domain and Data Elements can be created in SAP ?</p>
+											  <br>
+											  <a href="https://medium.com/@bipsa1998/how-domain-and-data-elements-can-be-created-in-sap-ae5265262a2a" class="btn btn-primary">4 min read</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="card" style="width:300px">
+											<img class="card-img-top" src="images/pic09.png" alt="Card image" width="218" height="218">
+												<div class="card-body">
+												  <h4 class="card-title">Bipsa Nayak</h4>
+												  <p class="card-text">How to Create a table in SAP?</p>
+												  <br>
+												  <br>
+												  <a href="https://medium.com/@bipsa1998/how-to-create-a-table-in-sap-d4366786166a" class="btn btn-primary">5 min read</a>
+												</div>
+											</div>
+									</li>
+								</ul>
+								
+
+
+								<ul class="features">
+									<li>
+										<div class="card" style="width:300px">
+											<img class="card-img-top" src="images/pic10.png" alt="Card image" width="218" height="218" >
+											<div class="card-body">
+											  <h4 class="card-title">Bipsa Nayak</h4>
+											  <p class="card-text">The Race for Space: A competition for power</p>
+											  <a href="https://medium.com/@bipsa1998/the-race-for-space-a-competition-for-power-17ca5f373e55" class="btn btn-primary">3 min read</a>
+  
+											</div>
+										
+									</li>
+									<li>
+										<div class="card" style="width:300px">
+										<img class="card-img-top" src="images/pic11.png" alt="Card image" width="218" height="218">
+											<div class="card-body">
+											  <h4 class="card-title">Bipsa Nayak</h4>
+											  <p class="card-text">The Reality Of Population Growth</p>
+											  <br>
+											  <a href="https://medium.com/@bipsa1998/dont-be-alarmed-the-reality-of-population-growth-7c506716c41d" class="btn btn-primary">2 min read</a>
+											</div>
+										</div>
+									</li>
+			
+								</ul>
+
+								
+								
+										
+											
+								</header>
+								<footer class="major">
+									<!--<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>-->
+								</footer>
+							</section>
+
+					</div>
+					<!-- ======= Blog Section ======= -->
+    <!--<section id="ctc" class="blog-mf sect-pt4 route">-->
+<!-- End Blog Section -->
+				<!-- Footer -->
+				<header class="major" >
+				</header>
+					<footer id="footer">
+							<!--	<li><a href="generic.html" class="button">Learn More</a></li>-->
+							<!--</ul>-->
+							
+							<form action="https://formspree.io/f/xgejvypd" method="POST">
+								<!-- 2 column grid layout with text inputs for the first and last names -->
+								<div class="row mb-4">
+								  <div class="col">
+									<div class="form-outline">
+										<h2 style="text-align:center ; font-size: 40px" ><strong>Contact Me</strong></h2>
+										<!--<label class="form-label" for="form6Example1">Name</label>
+									  <input type="text" id="form6Example1" class="form-control" />-->
+							
+									  
+									</div>
+								  </div>
+								  
+								</div>
+							  
+								<!-- Text input -->
+						
+								<!-- Text input -->
+								<div class="form-outline mb-4">
+									
+									<label class="form-label" for="form6Example4">Name</label>
+								  <input type="text" id="form6Example4" class="form-control" />
+								  
+								</div>
+								<div class="form-outline mb-4">
+									
+									<label class="form-label" for="form6Example4">Email</label>
+								  <input type="text" id="form6Example4" class="form-control" />
+								  
+								</div>
+							
+								<div class="form-outline mb-4">
+									<label class="form-label" for="form6Example7">Message</label>
+								  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+								  
+								</div>
+							
+								<div class="text-center">
+								<button type="button" class="btn btn-Basic">Send Message</button>
+								</div>
+							  </form>
+						</section>
+						<section>
+							<section id="seventh" class="main special"></section>
+							<header class="major">
+							</header>
+							<!--<h2>Get in Touch</h2>-->
+							<div class="col-md-10" ; style = " display: flex; justify-content: right;">
+
+							<dl class="alt">
+								<br>
+								<br>
+								
+								<br>
+								<dt>Linkedln </dt>
+								<dd ><a href="https://www.linkedin.com/in/bipsa-nayak/"><b>Bipsa Nayak</b></a></dd>
+								<dt>Medium</dt>
+								<dd><a href="https://medium.com/@bipsa1998"><b>My Medium Profile</b></a></dd>
+								<dt>Email</dt>
+								<dd><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><b>bipsa0531@gmail.com</b></a></dd>
+								
+
+											
+							</dl>
+							</div>
+							<!--<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedln alt"><span class="label">linkedln</span></a></li>
+							</ul>-->
+						</section>
+						<!--<p class="copyright">&copy; <a href=" ">Bipsa Nayak</a>.</p>-->
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
